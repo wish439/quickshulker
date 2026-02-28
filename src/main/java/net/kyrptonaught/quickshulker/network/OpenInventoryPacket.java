@@ -10,7 +10,7 @@ import net.minecraft.util.Identifier;
 
 public class OpenInventoryPacket implements CustomPayload {
 
-    public static final PacketCodec<PacketByteBuf, OpenInventoryPacket> CODEC = PacketCodec.of((value, buf) -> buf.writeInt(0), buf -> new OpenInventoryPacket());
+    public static final PacketCodec<PacketByteBuf, OpenInventoryPacket> CODEC = PacketCodec.of((value, buf) -> {}, buf -> new OpenInventoryPacket());
 
     public static final Id<OpenInventoryPacket> ID = new Id<>(Identifier.of(QuickShulkerMod.MOD_ID, "openinv"));
 
